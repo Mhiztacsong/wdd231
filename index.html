@@ -3,9 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 231 - Home Page</title>
+    <meta name="description" content="Home Page">
+    <meta name="author" content="Johnson Nsisong Gabriel">
+    <link href="styles/home-page.css" rel="stylesheet">
+    <script src="scripts/home-page.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <p>THIS IS NSISONG</p>
+    <header>
+        <img src="images/profile.jpg" alt="Hello, my name is Johnson Nsisong Gabriel" width="200">
+        <h1>Johnson N. Gabriel</h1>
+        <button type="button" id="menu"></button>
+    </header>
+    <nav class="navigation">
+        <a href="index.html" title="Home" class="active">Home</a>
+        <a href="">Chamber</a>
+        <a href="">GitHub Profile</a>
+        <a href="">LinkedIn</a>
+    </nav>
+    <main>
+        <section>
+            <h2 class="cw">Course Work</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <h2 class="akwaibom">Akwa-Ibom, Nigeria</h2>
+            <figure>
+                <img src="images/akwaibom.jpeg" alt="Water Fountain" width="250">
+                <figcaption>Water Fountain</figcaption>
+            </figure>
+        </section>
+        <section class="wcp">
+            <h2 class="certificate">Web and Computer Programming Certificate</h2>
+            <div id="bttn">
+                <button type="button" id="all">ALL</button>
+                <button type="button" id="cse">CSE</button>
+                <button type="button" id="wdd">WDD</button>
+            </div>
+            
+            <div id="course-container"></div>
+            <p id="total-credits"></p>
+        </section>
+    </main>
+    <footer>
+        <p> &copy; <span id="currentYear"></span> 💥Johnson Nsisong Gabriel💥 Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
