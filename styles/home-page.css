@@ -111,6 +111,7 @@ figcaption {
     margin: 1rem 0;
     border-radius: 5px;
     font-size: 30px;
+    width: 100px;
 }
 
 #course-container {
@@ -163,6 +164,7 @@ footer{
         flex-direction: column;
         background-color: black;
         position: relative;
+        cursor: pointer;
     }
 
     .navigation.open {

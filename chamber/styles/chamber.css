@@ -1,0 +1,270 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+  
+header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background: #005f73;
+  color: white;
+  padding: 1.5rem;
+}
+
+header img {
+  display: block;
+  padding: 1rem ;
+}
+div {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+header span:first-child {
+  font-size: 1.5rem;
+}
+
+.navigation {
+  background-color: rgb(117, 63, 63);
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation a {
+  display: block;
+  flex: 1;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.navigation a:hover {
+  border-color: rgba(187, 24, 24, 0.3);
+}
+
+.active {
+  background-color: #bbb;
+}
+
+#menu {
+  display: none;
+} 
+
+main {
+  padding: 1rem;
+}
+
+.controls {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#member-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+#member-list.list {
+  display: block;
+}
+
+.member-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.member-card img {
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+  margin: 0 auto;
+  display: block;
+  object-fit: cover;
+}
+
+
+/* Table styling for list view */
+.member-table {
+  width: 100%; 
+  border-collapse: collapse; /* Remove gaps between table cells */
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+/* Header row styling */
+.member-table th {
+  background-color: #005f73; 
+  color: white; 
+  padding: 10px; 
+  text-align: left; 
+}
+
+/* Table body cell styling */
+.member-table td {
+  border: 1px solid #ddd;
+  padding: 10px; 
+}
+
+/* Zebra striping for rows */
+.member-table tr:nth-child(even) {
+  background-color: #f2f2f2; 
+}
+
+.member-table tr:nth-child(odd) {
+  background-color: #ffffff; 
+}
+
+/* Hover effect for table rows */
+.member-table tr:hover {
+  background-color: #e0f7fa;
+}
+
+/* Links inside the table */
+.member-table a {
+  color: #005f73;
+  text-decoration: none;
+}
+
+.member-table a:hover {
+  text-decoration: underline;
+}
+
+/* List table editing ends here */
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  background: #005f73;
+  color: white;
+  padding: 1rem;
+}
+
+footer section {
+  text-align: left;
+}
+
+section h2 {
+  margin: 0rem;
+}
+
+.sociallinks {
+  text-align: center;
+}
+
+section nav a {
+  padding: 1rem;
+}
+
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+
+@media screen and (max-width: 540px) { 
+  #menu {
+    display: flex;
+    font-size: 2rem;
+    border: none;
+    background: none;
+    color: white;
+    margin-left: auto;
+    cursor: pointer;
+  }
+
+  #menu::before {
+      content: "≡";
+  }
+
+  #menu.open::before {
+      content: "✖";
+  }
+
+  .navigation {
+      display: flex; /* changed from none*/
+      flex-direction: column;
+      background-color: rgb(117, 63, 63);
+      cursor: pointer;
+      padding-top: 0rem;
+      padding-bottom: 0rem;
+      /* addition */
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease-in-out;
+  }
+
+  .navigation.open {
+      /* display: flex; */   /*Had to coment this out when applying the transition effect*/
+      /* addition */
+      max-height: 500px;
+  }
+
+  .navigation a {
+      padding: 1rem;
+      text-align: center;
+      color: white;
+      text-decoration: none;
+      /* addition for transition effect */
+      border-bottom: 0.5px solid rgba(0, 0, 0, 0.404); 
+      transition: background-color 0.3s ease, color 0.3s ease;  
+  }
+
+  .navigation a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
+  }
+
+  header img {
+    padding-left: 0;
+  }
+
+  /* table styling begins */
+  .member-table {
+    border: 0; /* Remove outer borders */
+    font-size: 0.9rem; /* Slightly reduce font size */
+  }
+
+  .member-table thead {
+    display: none; /* Hide table headers */
+  }
+
+  .member-table tr {
+    display: block; /* Display each row as a block */
+    margin-bottom: 1rem;
+  }
+
+  .member-table td {
+    display: block; /* Each cell is displayed as a block */
+    text-align: left; /* Align text to the right */
+    padding: 8px;
+    position: relative;
+  }
+
+  .member-table td::before {
+    content: attr(data-label); /* Use the "data-label" attribute for headers */
+    position: absolute;
+    left: 0;
+    text-align: left; /* Align header text to the left */
+    font-weight: bold;
+  }
+  /* table styling ends */
+
+  
+  footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+}
+
