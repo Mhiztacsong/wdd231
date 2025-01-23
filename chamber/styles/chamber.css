@@ -51,7 +51,7 @@ header img {
 }
 
 .active {
-  background-color: #bbb;
+  background-color: #201d1d;
 }
 
 #menu {
@@ -156,6 +156,11 @@ footer section {
 
 section h2 {
   margin: 0rem;
+}
+
+section > a {
+  text-decoration: none;
+  color: yellow;
 }
 
 .sociallinks {
