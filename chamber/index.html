@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home page for Chamber of Commerce">
+    <meta name="author" content="Johnson Nsisong Gabriel">
+    <title>Network Haven Chamber of Commerce Home Page</title>
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Chamber of Commerce Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://im-ds.ro/wp-content/uploads/2023/12/07_IMAGINE-INTERIOARA-scaled.webp">
+    <meta property="og:url" content="https://mhiztacsong.github.io/wdd231/chamber">
+
+    <link rel="icon" href="haven-logo.ico">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/chamber.css" rel="stylesheet">
+    <script src="scripts/chamber.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/haven-logo.webp" alt="Network Haven" width="70" height="59">
+        <h1>
+            <span class="main-title">Network Haven</span>
+            <br/>
+            <span class="sub-title">Chamber of Commerce</span>
+        </h1>
+        <button type="button" id="menu"></button>
+    </header>
+    <nav class="navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="directory.html">Directory</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>       
+    </nav>
+   <main>
+    <div class="hero">
+        <img src="images/hero.jpeg" alt="Hero image">
+    </div>
+    <section class="cta-section">
+        <h2>Join the Network Haven Chamber of Commerce</h2>
+        <p>Become a part of a thriving community that supports businesses and fosters growth.</p>
+        <a href="future.html" class="cta-button">Join Now</a>
+    </section>
+    <h2 id="home">Home</h2>
+    <div class="mc">
+        <section>
+            <h3 class="title">Events</h3>
+        </section>
+        <section>
+            <h3 class="title">Current Weather</h3>
+            <div class="weather">
+                <img id="weather-icon" src="" alt="">
+                <div class="weather-info">
+                    <span id="current-temp"></span>
+                    <span id="description"></span>
+                    <div>
+                        <label>High:</label>
+                        <span id="high"></span>
+                    </div>
+                    <div>
+                        <label>Low:</label>
+                        <span id="low"></span>
+                    </div> 
+                    <div>
+                        <label>Humidity:</label>
+                        <span id="humidity"></span>
+                    </div>
+                    <div>
+                        <label>Sunrise:</label>
+                        <span id="sunrise"></span>
+                    </div>
+                    <div>
+                        <label>Sunset:</label>
+                        <span id="sunset"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h3 class="title">Weather Forecast</h3>
+            <div class="weather-data">
+                <div>
+                    <label>Today:</label>
+                    <span id="today"></span> 
+                </div>
+                <div>
+                    <label>Monday:</label>
+                    <span id="monday"></span>
+                </div>
+                <div>
+                    <label>Tuesday:</label>
+                    <span id="tuesday"></span>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="business">
+        <section>
+            <div class="business1">
+                <h3>Tesla Inc</h3>
+                <p>Accelerating the world's transition to sustainable energy</p>
+            </div>
+            <div class="content">
+                <img src="images/tesla-logo.jpeg" alt="tesla-logo" width="150" height="150">
+                <div class="info">
+                    <p><strong>EMAIL:</strong> <a href="mailto:customersupport@tesla.com">customersupport@tesla.com</a></p>
+                    <p><strong>PHONE:</strong> +1 650-681-5000</p>
+                    <P><strong>URL:</strong> <a href="https://www.tesla.com">tesla.com</a></P>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="business1">
+                <h3>Microsoft Corporation</h3>
+                <p>Empowering every person and every organization on the planet to achieve more</p>
+            </div>
+            <div class="content">
+                <img src="images/microsoft-logo.jpeg" alt="microsoft-logo" width="150" height="150">
+                <div class="info">
+                    <p><strong>EMAIL:</strong> <a href="mailto:support@microsoft.com">support@microsoft.com</a></p>
+                    <p><strong>PHONE:</strong> +1 425-882-8080</p>
+                    <P><strong>URL:</strong> <a href="https://www.microsoft.com">microsoft.com</a></P>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="business1">
+                <h3>Amazon Inc</h3>
+                <p>Work hard. Have fun. Make history</p>
+            </div>
+            <div class="content">
+                <img src="images/amazon-logo.jpeg" alt="amazon-logo" width="150" height="150">
+                <div class="info">
+                    <p><strong>EMAIL:</strong> <a href="mailto:cis@amazon.com">cis@amazon.com</a></p>
+                    <p><strong>PHONE:</strong> +1 206-266-1000</p>
+                    <P><strong>URL:</strong> <a href="https://www.amazon.com">amazon.com</a></P>
+                </div>
+            </div>
+        </section> 
+    </div>
+   </main>
+   <footer>
+        <section>
+            <h2>Network Haven Chamber of Commerce</h2>
+            <p>Plot 123, Victoria Island,</p>
+            <p>Adetokunbo Ademola Street,</p>
+            <p>Lagos Island, Lagos State, Nigeria.</p>
+            <a href="mailto:jgabriel13813@gmail.com">jgabriel13813@gmail.com</a>
+            <p>+234-907-918-7082</p>
+        </section>
+        <section>
+            <nav class="sociallinks">
+                <a href="https://facebook.com"><img src="images/facebook.webp" alt="Facebook"></a>
+                <a href="https://twitter.com"><img src="images/twitter.webp" alt="Twitter"></a>
+                <a href="https://instagram.com"><img src="images/instagram.webp" alt="Instagram"></a>
+            </nav>
+        </section>
+        <section>
+            <p>WDD231 Class Project</p>
+            <p>Johnson Nsisong Gabriel</p>
+            <p>&copy; <span id="year"></span> Network Haven Chamber of Commerce</p>
+            <p>Last Modification: <span id="last-modified"></span></p>   
+        </section>        
+   </footer>
+</body>
+</html>
