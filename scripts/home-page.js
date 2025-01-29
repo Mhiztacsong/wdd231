@@ -110,6 +110,10 @@ function displayCourses(coursesToDisplay) {
         courseCard.style.backgroundColor = course.completed ? 'green' : 'red'; // Different style for completed
 
         courseCard.textContent = `${course.subject}${course.number}`;
+
+        // Add event listeners to open modal on course card click
+        courseCard.addEventListener('click', () => displayCourseDetails(course));
+    
         container.appendChild(courseCard);
 
         totalCredits += course.credits; // Calculate total credits
@@ -136,3 +140,27 @@ document.getElementById('wdd').addEventListener('click', () => filterCourses('WD
 
 // Initial load (display all courses)
 filterCourses('ALL');
+
+
+const courseDetails = document.querySelector('#course-details');
+
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+      <button id="closeModal">❌</button>
+      <h2>${course.subject} ${course.number}</h2>
+      <h3>${course.title}</h3>
+      <p><strong>Credits</strong>: ${course.credits}</p>
+      <p><strong>Certificate</strong>: ${course.certificate}</p>
+      <p>${course.description}</p>
+      <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    courseDetails.showModal();
+
+    const closeModal = document.querySelector('#closeModal')
+    
+    closeModal.addEventListener("click", () => {
+      courseDetails.close();
+    });
+}
