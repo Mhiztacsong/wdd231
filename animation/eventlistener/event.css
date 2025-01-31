@@ -1,0 +1,18 @@
+.slide-in {
+    animation-duration: 3s;
+    animation-name: slide-in;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+}
+
+@keyframes slide-in {
+    from {
+        translate: 150vw 0;
+        scale: 200% 1;
+    }
+
+    to {
+        translate: 0 0;
+        scale: 100% 1;
+    }   
+}

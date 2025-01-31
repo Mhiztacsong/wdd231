@@ -114,14 +114,26 @@ header img {
   padding: 0 1rem;
 }
 
-.cta-section {
-  text-align: center;
-  padding: 20px;
-  background-color: white;
+.hero {
+  position: relative;
+  overflow: hidden;
+  max-height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero img {
+  width: 100%;  
+  height: 100%;
+  object-fit: cover;
 }
 
 .cta-button {
-  display: inline-block;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
   margin-top: 10px;
   padding: 10px 20px;
   background-color: #0073e6; 
@@ -189,18 +201,6 @@ section > h3 {
 .content img {
   align-self: center;
   padding: .5rem 1rem; 
-}
-
-.hero {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.hero img {
-  display: block;
-  width: 100%;
-  
 }
 
 .weather {
@@ -386,6 +386,13 @@ footer p {
 
   header img {
     padding-left: 0;
+  }
+
+  .cta-button {
+    bottom: 10px;
+    right: 10px;
+    padding: 8px 14px;
+    font-size: 1rem;
   }
 
   /* table styling begins */

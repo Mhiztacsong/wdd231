@@ -25,7 +25,7 @@
             <br/>
             <span class="sub-title">Chamber of Commerce</span>
         </h1>
-        <button type="button" id="menu"></button>
+        <button type="button" id="menu" aria-label="Open menu"></button>
     </header>
     <nav class="navigation">
         <a href="index.html" class="active">Home</a>
@@ -36,12 +36,8 @@
    <main id="main">
     <div class="hero">
         <img src="images/hero.jpeg" alt="Hero image">
-    </div>
-    <section class="cta-section">
-        <h2>Join the Network Haven Chamber of Commerce</h2>
-        <p>Become a part of a thriving community that supports businesses and fosters growth.</p>
         <a href="future.html" class="cta-button">Join Now</a>
-    </section>
+    </div>
     <h2 id="home">Home</h2>
     <div class="mc">
         <section>
@@ -80,18 +76,9 @@
         <section>
             <h3 class="title">Weather Forecast</h3>
             <div class="weather-data">
-                <div>
-                    <label>Today:</label>
-                    <span id="today"></span> 
-                </div>
-                <div>
-                    <label>Monday:</label>
-                    <span id="monday"></span>
-                </div>
-                <div>
-                    <label>Tuesday:</label>
-                    <span id="tuesday"></span>
-                </div>
+                <p><label>Today:</label> <span id="today"></span></p>
+                <p><label>Monday:</label> <span id="monday"></span></p>   
+                <p><label>Tuesday:</label> <span id="tuesday"></span></p>
             </div>
         </section>
     </div>

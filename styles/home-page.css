@@ -161,6 +161,25 @@ dialog button {
     border: 1px solid rgb(0 0 0 / 0.1);
 }
 
+/* Amination styling */
+
+#course-details {
+    animation-duration: 1.5s;
+    animation-name: slide-in;
+}
+
+@keyframes slide-in {
+    from {
+        translate: 150vw 0;
+        scale: 200% 1;
+    }
+
+    to {
+        translate: 0 0;
+        scale: 100% 1;
+    }   
+}
+
 
 /* Media Query: Small Screens (max-width: 540px) */
 @media screen and (max-width: 540px) {
