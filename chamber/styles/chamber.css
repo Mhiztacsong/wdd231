@@ -330,6 +330,114 @@ footer p {
 }
 
 
+/* join Page styling */
+.form-container {
+  /* width: 60%; */
+  margin: auto;
+  padding: 20px;
+}
+
+.wf1 fieldset {
+  margin: 2rem 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: .5rem 2%;
+}
+
+.wf1 legend {
+  color: #445ba9;
+  padding: 0 .5rem;
+}
+
+.wf1 label {
+  display: block;
+  padding-top: 1rem;
+  color: red;
+  font-size: .9rem;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="tel"],
+.wf1 input[type="email"],
+.wf1 input[type="date"],
+.wf1 textarea,
+.wf1 select,
+.wf1 input[type="number"]
+{
+  background-color: #eee;
+  display: block;
+  border: solid 1px #9999;
+  border-radius: 6px;
+  padding: .75rem;
+  color: #555;
+  width: 100%;
+  max-width: 400px;
+  appearance: none;
+}
+
+
+.wf1 input[type="submit"] {
+  border: none;
+  background-image: linear-gradient(#9c2c13, #6f200e);
+  color: #fff;
+  border-radius: 6px;
+  padding: .8rem;
+  width: 96%;
+  max-width: 400px;
+  margin: -1rem 2% 2rem 2%;
+  box-shadow: 1px 1px 4px #999;
+}
+
+.wf1 input:required {
+  border-right: solid 8px red;
+}
+
+.wf1 input:required:valid {
+  border-right: solid 8px green;
+}
+
+.membership-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.card {
+  background: lightgray;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  margin: 10% auto;
+  width: 50%;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+}
+
+
 @media screen and (max-width: 540px) { 
   #menu {
     display: flex;
