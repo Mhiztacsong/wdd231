@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", async () => {
     const memberList = document.getElementById("member-list");
-    const gridViewButton = document.getElementById("grid-view");
-    const listViewButton = document.getElementById("list-view");
-  
+
     // Fetch JSON data
     const response = await fetch("data/members.json");
     const members = await response.json();
@@ -67,10 +65,16 @@ document.addEventListener("DOMContentLoaded", async () => {
         hamButton.classList.toggle("open");
 
     });
+
+    const gridViewButton = document.getElementById("grid-view");
+    const listViewButton = document.getElementById("list-view");
+  
   
     // Toggle layouts
-    gridViewButton.addEventListener("click", () => renderMembers("grid"));
-    listViewButton.addEventListener("click", () => renderMembers("list"));
+    if (gridViewButton && listViewButton) {
+      gridViewButton.addEventListener("click", () => renderMembers("grid"));
+      listViewButton.addEventListener("click", () => renderMembers("list"));
+    } 
   
     // Initial render
     renderMembers("grid");
@@ -190,14 +194,9 @@ fetchForcastWeather();
 
 
 // join page scripts
-document.getElementById("timestamp").value = new Date().toISOString();
 
-// function openModal(id) {
-//     document.getElementById(id).style.display = "block";
-// }
-
-// function closeModal(id) {
-//     document.getElementById(id).style.display = "none";
-// }
-
+const timestampField = document.getElementById("timestamp");
+if (timestampField) {
+  timestampField.value = new Date().toISOString();
+}
 
