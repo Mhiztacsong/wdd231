@@ -70,8 +70,8 @@ header img {
 
 #grid-view,
 #list-view {
-  padding: 1rem;
-  border-radius: 5px;
+  padding: .5rem;
+  border-radius: 7px;
   margin: 0 1rem;
 }
 
@@ -351,7 +351,7 @@ footer p {
 .wf1 label {
   display: block;
   padding-top: 1rem;
-  color: red;
+  color: blue;
   font-size: .9rem;
 }
 
@@ -525,7 +525,11 @@ footer p {
   }
 
   header img {
-    padding-left: 0;
+    padding-left: .5rem;
+  }
+
+  #menu {
+    padding-right: 1rem;
   }
 
   .cta-button {
@@ -577,6 +581,23 @@ footer p {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
+  }
+
+  footer p {
+    font-size: 15px;
+  }
+
+  body,
+  .sub-title {
+    font-size: 15px;
+  }
+
+  .main-title {
+    font-size: 20px;
+  }
+
+  #join-h1 {
+    font-size: 1.3rem;
   }
   
   .hero img {
