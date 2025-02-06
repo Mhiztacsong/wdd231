@@ -22,7 +22,7 @@
         <img src="images/haven-logo.webp" alt="Network Haven" width="70" height="59">
         <div>
             <span class="main-title">Network Haven</span>
-            <br/>
+            <br>
             <span class="sub-title">Chamber of Commerce</span>
         </div>
         <button type="button" id="menu"></button>
@@ -38,7 +38,7 @@
         <h1 id="join-h1">Network Haven Chamber of Commerce Join Page</h1>
 
 
-        <section class="form-container">
+        <div class="form-container">
             <form method="get" action="thankyou.html" class="wf1">
                 <fieldset>
                     <legend>Applicant Information</legend>
@@ -46,11 +46,11 @@
                     <label>Last Name* <input type="text" name="last_name" title="Last Name" autocomplete="family-name" required></label>
                     <label>Organizational Title* <input type="text" name="organization_title" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}"></label>
                     <label>Phone <input type="tel" name="phone" title="Mobile Phone" autocomplete="tel" placeholder="1235551234"></label>
-                    <label>Email* <input type="email" name="email"  title="Email" autocomplete="email" placeholder="someone@gmail.com"required></label>
+                    <label>Email* <input type="email" name="email"  title="Email" autocomplete="email" placeholder="someone@gmail.com" required></label>
                     <label>Business/Organization Name* <input type="text" name="organization" title="Organization Name" autocomplete="organization" required></label>
                     <label>Membership Level*
                         <select name="membership_level" required>
-                            <option value="">Please Select &#9662</option>
+                            <option value="">Please Select &#9662;</option>
                             <option value="np">Non-Profit</option>
                             <option value="bronze">Bronze</option>
                             <option value="silver">Silver</option>
@@ -65,7 +65,7 @@
 
                 <input type="submit" value="Submit Application">
             </form>
-        </section>
+        </div>
 
         <section class="membership-cards">
             <div class="card" onclick="openModal('npModal')">
@@ -103,19 +103,19 @@
             <a href="mailto:jgabriel13813@gmail.com">jgabriel13813@gmail.com</a>
             <p>+234-907-918-7082</p>
         </section>
-        <section>
+        <div>
             <nav class="sociallinks">
                 <a href="https://facebook.com"><img src="images/facebook.webp" alt="Facebook"></a>
                 <a href="https://twitter.com"><img src="images/twitter.webp" alt="Twitter"></a>
                 <a href="https://instagram.com"><img src="images/instagram.webp" alt="Instagram"></a>
             </nav>
-        </section>
-        <section>
+        </div>
+        <div>
             <p>WDD231 Class Project</p>
             <p>Johnson Nsisong Gabriel</p>
             <p>&copy; <span id="year"></span> Network Haven Chamber of Commerce</p>
             <p>Last Modification: <span id="last-modified"></span></p>   
-        </section>        
+        </div>        
     </footer>
 
      <!-- Modals -->

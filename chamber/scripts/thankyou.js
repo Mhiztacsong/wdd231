@@ -19,6 +19,7 @@ formData.forEach(item => {
 
     // Format key: replace underscores with spaces and capitalize words
     key = key.replace(/_/g, " ").replace(/\b\w/g, char => char.toUpperCase());
+    value = value.replace("+", " ");
 
     // Create a list item and append it to the UL
     let listItem = document.createElement("li");
