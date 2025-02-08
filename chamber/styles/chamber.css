@@ -186,7 +186,7 @@ section > h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  /* gap: 2px; */
   flex-wrap: wrap;
   max-width: 100%;
   text-align: left;
@@ -201,6 +201,8 @@ section > h3 {
 .content img {
   align-self: center;
   padding: .5rem 1rem; 
+  width: 200px;
+  height: 200px;
 }
 
 .weather {
@@ -575,7 +577,7 @@ footer p {
   .mc {
     display: grid;
     grid-template-columns: 1fr;
-  }
+  }  
   
   footer {
     display: grid;

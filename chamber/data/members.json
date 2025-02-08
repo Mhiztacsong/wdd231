@@ -4,7 +4,7 @@
       "address": "One Apple Park Way, Cupertino, CA 95014, USA",
       "phone": "+1 408-996-1010",
       "website": "https://www.apple.com",
-      "image": "images/apple-logo.jpeg",
+      "image": "images/apple-logo.webp",
       "membershipLevel": "Gold",
       "description": "Technology company known for the iPhone, Mac, and other innovative products."
     },
@@ -13,7 +13,7 @@
       "address": "1600 Amphitheatre Parkway, Mountain View, CA 94043, USA",
       "phone": "+1 650-253-0000",
       "website": "https://www.google.com",
-      "image": "images/google-logo.jpeg",
+      "image": "images/google-logo.webp",
       "membershipLevel": "Gold",
       "description": "Global leader in search engines, cloud computing, and AI technologies."
     },
@@ -22,7 +22,7 @@
       "address": "13101 Tesla Road, Austin, TX 78725, USA",
       "phone": "+1 650-681-5000",
       "website": "https://www.tesla.com",
-      "image": "images/tesla-logo.jpeg",
+      "image": "images/tesla-logo.webp",
       "membershipLevel": "Gold",
       "description": "Electric vehicle and clean energy company."
     },
@@ -31,7 +31,7 @@
       "address": "One Microsoft Way, Redmond, WA 98052, USA",
       "phone": "+1 425-882-8080",
       "website": "https://www.microsoft.com",
-      "image": "images/microsoft-logo.jpeg",
+      "image": "images/microsoft-logo.webp",
       "membershipLevel": "Gold",
       "description": "Developer of Windows, Office, Azure cloud services, and more."
     },
@@ -40,7 +40,7 @@
       "address": "410 Terry Avenue North, Seattle, WA 98109, USA",
       "phone": "+1 206-266-1000",
       "website": "https://www.amazon.com",
-      "image": "images/amazon-logo.jpeg",
+      "image": "images/amazon-logo.webp",
       "membershipLevel": "Silver",
       "description": "E-commerce, cloud computing, and entertainment giant."
     },
@@ -49,7 +49,7 @@
       "address": "One Coca-Cola Plaza, Atlanta, GA 30313, USA",
       "phone": "+1 404-676-2121",
       "website": "https://www.coca-cola.com",
-      "image": "images/coca-cola-logo.jpeg",
+      "image": "images/coca-cola-logo.webp",
       "membershipLevel": "Silver",
       "description": "World-renowned beverage company."
     },
@@ -58,7 +58,7 @@
       "address": "702 S.W. 8th Street, Bentonville, AR 72716, USA",
       "phone": "+1 479-273-4000",
       "website": "https://www.walmart.com",
-      "image": "images/walmart-logo.jpeg",
+      "image": "images/walmart-logo.webp",
       "membershipLevel": "Member",
       "description": "Multinational retail corporation operating a chain of hypermarkets."
     }

@@ -1,0 +1,58 @@
+[
+    {
+        "title": "City Park",
+        "image": "images/city-park.webp",
+        "alt": "City Park",
+        "address": "123 Greenway Blvd, Lagos",
+        "description": "A beautiful urban park with walking trails and picnic spots."
+    },
+    {
+        "title": "Historic Museum",
+        "image": "images/museum.webp",
+        "alt": "Historic Museum",
+        "address": "45 Heritage Rd, Lagos",
+        "description": "Explore the rich history and culture of our community."
+    },
+    {
+        "title": "Local Art Gallery",
+        "image": "images/art-gallery.webp",
+        "alt": "Local Art Gallery",
+        "address": "78 Creative St, Lagos",
+        "description": "Showcasing works from talented local artists."
+    },
+    {
+        "title": "Botanical Gardens",
+        "image": "images/botanical-garden.webp",
+        "alt": "Botanical Gardens",
+        "address": "Garden Rd, Lagos",
+        "description": "Enjoy exotic plants and beautiful floral displays."
+    },
+    {
+        "title": "Tech Hub",
+        "image": "images/Tech-hubs.webp",
+        "alt": "Tech Hub",
+        "address": "99 Innovation Ave, Lagos",
+        "description": "A center for startups and entrepreneurs."
+    },
+    {
+        "title": "Local Market",
+        "image": "images/local-market.webp",
+        "alt": "Local Market",
+        "address": "12 Trade St, Lagos",
+        "description": "Find fresh produce and handmade goods."
+    },
+    {
+        "title": "Beachfront",
+        "image": "images/beachfont.webp",
+        "alt": "Beachfront",
+        "address": "Coastline Dr, Lagos",
+        "description": "Relax by the ocean with stunning views."
+    },
+    {
+        "title": "Concert Arena",
+        "image": "images/lagos-arena.webp",
+        "alt": "Concert Arena",
+        "address": "Rock St, Lagos",
+        "description": "Hosting major events and live performances."
+    }
+]
