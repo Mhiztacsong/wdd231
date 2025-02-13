@@ -1,0 +1,240 @@
+html, body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+main {
+    margin: 0;
+} 
+
+h1, h2, h3 {
+    font-family: Helvetica; 
+}
+
+p {
+    font-family: Cambria;
+} 
+
+h1 {
+    padding: 1.5rem;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: left; 
+    align-items: center;
+    background: #2c3e50;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2px;
+}
+
+header img {
+    display: block;
+    padding: 1rem;
+    max-width: 100%;
+}
+
+#menu {
+    display: none;
+}
+
+/* Navigation */
+.navigation {
+    background: rgb(235, 219, 219);
+    width: 100%;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+}
+
+.navigation ul li {
+    flex: 1;
+}
+
+.navigation ul li a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+/* Remove border from the last link to prevent extra border on the right */
+.navigation ul li:last-child a {
+    border-right: none;
+}
+
+.navigation ul li a:hover {
+    background: gray;
+}
+
+.active {
+    background-color: #76accf;
+}
+
+/* Footer Styling */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: #333;
+    color: white;
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: left;
+    font-size: 15px;
+}
+
+section h2 {
+    margin: 0rem;
+}
+
+section > a {
+    text-decoration: none;
+    color: yellow;
+}
+
+.sociallinks {
+    margin: 1rem;
+}
+
+.sociallinks a {
+    margin: 0;
+    padding: .2rem;
+}
+
+.sociallinks img {
+    width: 30px;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* Response Page Styling */
+.response {
+    text-align: center;
+    padding: 2rem;
+    font-size: xx-large;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 540px) {  
+    #menu {
+        display: flex;
+        font-size: 2rem;
+        border: none;
+        background: none;
+        color: white;
+        padding: 0;
+        margin-left: auto;
+        cursor: pointer;
+        width: auto; /* Ensures no unnecessary space */
+    }
+
+    #menu::before {
+        content: "≡";
+    }
+
+    #menu.open::before {
+        content: "✖";
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between; /* Ensures logo and menu stay in bounds */
+        align-items: center;
+        background: #2c3e50;
+        color: white;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px 20px;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(235, 219, 219);
+        cursor: pointer;
+        width: 100%; /* Ensure it takes full width */
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out;
+    }
+
+    .navigation ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }    
+
+    .navigation.open {
+        max-height: 500px;
+        overflow: auto;
+    }
+
+    .navigation ul li {
+        width: 100%;
+    }
+
+    .navigation ul li a {
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+        color: black;
+        text-decoration: none;
+        border-bottom: 0.5px solid rgba(0, 0, 0, 0.404); 
+        transition: background-color 0.3s ease, color 0.3s ease;  
+    }
+
+    .navigation a:hover {
+        background-color: #bbb;
+        color: #333;
+        font-weight: 700;
+    }
+
+    header img {
+        padding-left: 0rem;
+        margin-left: 0;
+        max-width: 60%;
+    }
+
+    h1 {
+        font-size: 20px;
+        padding-left: 0 ;
+        margin-right: 1.5rem;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        box-sizing: border-box;
+    }    
+
+    footer {
+        display: grid;
+        gap: 1rem;
+        background: #333;
+        color: white;
+        padding: 1rem;
+        margin-top: 1rem;
+        text-align: left;
+    }
+}

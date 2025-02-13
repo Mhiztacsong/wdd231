@@ -1,0 +1,24 @@
+/* resources styling */
+#resource-list {
+    border-radius: 6px;
+    max-width: 450px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    background-color: #e2dfdf;
+}
+
+.resources {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+.resources h2 {
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+#resource-list li {
+    margin: 1rem;
+}

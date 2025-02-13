@@ -186,7 +186,6 @@ section > h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* gap: 2px; */
   flex-wrap: wrap;
   max-width: 100%;
   text-align: left;
@@ -297,16 +296,13 @@ section > h3 {
 /* List table editing ends here */
 
 footer {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  gap: 1rem;
   background: #005f73;
   color: white;
   padding: 1rem;
   margin-top: 1rem;
-}
-
-footer section {
-  text-align: left;
+  text-align: center;
 }
 
 section h2 {
@@ -319,13 +315,17 @@ section > a {
 }
 
 .sociallinks {
-  text-align: center;
+  margin: 1rem;
 }
 
-section nav a {
-  padding: 1rem;
+.sociallinks a {
+  margin: 0;
+  padding: .2rem;
 }
 
+.sociallinks img {
+  width: 30px; 
+}
 
 footer p {
   margin: 0.5rem 0;
@@ -420,7 +420,7 @@ footer p {
   
   /* Animation for appearance */
   opacity: 0; /* Start invisible */
-  transform: translateY(30px); /* Start slightly lower */
+  transform: translateY(30px); 
   animation: fadeInSlide 1s ease-out forwards;
 }
 
@@ -577,12 +577,6 @@ footer p {
   .mc {
     display: grid;
     grid-template-columns: 1fr;
-  }  
-  
-  footer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
   }
 
   footer p {

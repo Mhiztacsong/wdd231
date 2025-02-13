@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindBloom & Wellness Haven Contact Page</title>
+    <meta name="description" content="MindBloom & Wellness Haven Contact Page">
+    <meta name="author" content="Johnson Nsisong Gabriel">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="MindBloom & Wellness Haven Contact Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://th.bing.com/th/id/OIP.rgEnhZgn767oRV5VIrVmUAHaEK?pid=ImgDet&w=192&h=108&c=7">
+    <meta property="og:url" content="https://mhiztacsong.github.io/wdd231/final-project/contact">
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <script src="scripts/scripts.js" defer></script>
+</head>
+<body class="contact2">
+    <header>
+        <img src="images/haven-logo.webp" alt="Network Haven">
+        <h1>MindBloom & Wellness Haven</h1>
+        <button type="button" id="menu" aria-label="Open menu"></button>
+    </header>
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2 class="contact">Contact Us</h2>
+        <form action="response.html" method="get" class="form">
+            <label>Name*<input type="text" id="name" name="name" required></label>
+            
+            <label>Email*<input type="email" id="email" name="email" required></label>
+
+            <label for="message">Message*</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </main>
+    <footer>
+        <section>
+            <h2>MindBloom & Wellness Haven</h2>
+            <p>Plot 123, Victoria Island,</p>
+            <p>Adetokunbo Ademola Street,</p>
+            <p>Lagos Island, Lagos State, Nigeria.</p>
+            <a href="mailto:jgabriel13813@gmail.com">jgabriel13813@gmail.com</a>
+            <p>+234-907-918-7082</p>
+        </section>
+        <section>
+            <nav class="sociallinks">
+                <a href="https://facebook.com"><img src="images/facebook.webp" alt="Facebook"></a>
+                <a href="https://twitter.com"><img src="images/twitter.webp" alt="Twitter"></a>
+                <a href="https://instagram.com"><img src="images/instagram.webp" alt="Instagram"></a>
+            </nav>
+        </section>
+        <section>
+            <p>WDD231 Class Project</p>
+            <p>Johnson Nsisong Gabriel</p>
+            <p>&copy; <span id="currentyear"></span> MindBloom & Wellness Haven</p>
+            <p>Last Modification: <span id="lastModified"></span></p>   
+        </section>        
+    </footer>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mental Health & Wellness Final Site Project">
+    <meta name="author" content="Johnson Nsisong Gabriel">
+    <title>MindBloom & Wellness Haven Home Page</title>
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="MindBloom & Wellness Haven Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://th.bing.com/th/id/R.c30d872984d7b5b654745382fab91ac4?rik=sIw32vdg6JJGKg&pid=ImgRaw&r=0">
+    <meta property="og:url" content="https://mhiztacsong.github.io/wdd231/final-project">
+
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/homePage.css" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
+    <script src="scripts/scripts.js" defer></script>
+    <script src="scripts/homePage.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/haven-logo.webp" alt="Network Haven">
+        <h1>MindBloom & Wellness Haven</h1>
+        <button type="button" id="menu" aria-label="Open menu"></button>
+    </header>
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+         <!-- Hero Section with Call-to-Action -->
+         <section class="hero">
+            <div class="hero-content">
+                <h2>Your Mental Health Matters</h2>
+                <p>Discover tools and resources to improve your emotional well-being.</p>
+                <a href="resources.html" class="cta-button">Explore Resources</a>
+            </div>
+            <img src="images/mental-health-banner.webp" alt="Mental Wellness" loading="lazy">
+        </section>
+
+        <!-- Motivational Quote Section (API) -->
+        <section class="quote-section">
+            <blockquote id="mental-health-quote">Loading motivational quote...</blockquote>
+            <p class="quote-author" id="quote-author"></p>
+        </section>
+
+        <!-- Resources Section -->
+        <section class="resources-grid">
+            <div class="resource-card">
+                <h3><a href="therapist.html">Find a Therapist</a></h3>
+                <p>Connect with licensed professionals to guide your mental health journey.</p>
+            </div>
+            <div class="resource-card">
+                <h3><a href="self-care.html">Self-Care Tips</a></h3>
+                <p>Daily practices that improve your mental well-being.</p>
+            </div>
+            <div class="resource-card">
+                <h3><a href="crisis.html">Crisis Support</a></h3>
+                <p>Get immediate assistance if you're in distress.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section>
+            <h2>MindBloom & Wellness Haven</h2>
+            <p>Plot 123, Victoria Island,</p>
+            <p>Adetokunbo Ademola Street,</p>
+            <p>Lagos Island, Lagos State, Nigeria.</p>
+            <a href="mailto:jgabriel13813@gmail.com">jgabriel13813@gmail.com</a>
+            <p>+234-907-918-7082</p>
+        </section>
+        <section>
+            <nav class="sociallinks">
+                <a href="https://facebook.com"><img src="images/facebook.webp" alt="Facebook"></a>
+                <a href="https://twitter.com"><img src="images/twitter.webp" alt="Twitter"></a>
+                <a href="https://instagram.com"><img src="images/instagram.webp" alt="Instagram"></a>
+            </nav>
+        </section>
+        <section>
+            <p>WDD231 Class Project</p>
+            <p>Johnson Nsisong Gabriel</p>
+            <p>&copy; <span id="currentyear"></span> MindBloom & Wellness Haven</p>
+            <p>Last Modification: <span id="lastModified"></span></p>   
+        </section>        
+    </footer>
+</body>
+</html>
