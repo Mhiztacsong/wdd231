@@ -17,6 +17,8 @@
     <link href="styles/styles.css" rel="stylesheet">
     <script src="scripts/scripts.js" defer></script>
     <script src="scripts/homePage.js" defer></script>
+    <script src="scripts/visitTracker.js" defer></script>
+    <script src="scripts/modal.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -39,6 +41,11 @@
          <!-- Hero Section with Call-to-Action -->
          <section class="hero">
             <div class="hero-content">
+                
+                <aside class="sidebar">
+                    <p id="visit-message">Welcome!</p>
+                </aside>
+
                 <h2>Your Mental Health Matters</h2>
                 <p>Discover tools and resources to improve your emotional well-being.</p>
                 <a href="resources.html" class="cta-button">Explore Resources</a>
@@ -57,14 +64,17 @@
             <div class="resource-card">
                 <h3><a href="therapist.html">Find a Therapist</a></h3>
                 <p>Connect with licensed professionals to guide your mental health journey.</p>
+                <button class="read-more" data-info="Finding the right therapist can help you navigate challenges and improve your mental well-being. Learn how to choose a therapist that fits your needs.">Read More</button>
             </div>
             <div class="resource-card">
                 <h3><a href="self-care.html">Self-Care Tips</a></h3>
                 <p>Daily practices that improve your mental well-being.</p>
+                <button class="read-more" data-info="Self-care includes activities like mindfulness, exercise, and proper nutrition that contribute to mental and physical health. Discover easy self-care strategies to implement daily.">Read More</button>
             </div>
             <div class="resource-card">
                 <h3><a href="crisis.html">Crisis Support</a></h3>
                 <p>Get immediate assistance if you're in distress.</p>
+                <button class="read-more" data-info="Crisis support services provide urgent assistance to individuals facing mental health crises. Learn about the available hotlines and emergency interventions.">Read More</button>
             </div>
         </section>
     </main>
@@ -92,5 +102,14 @@
             <p>Last Modification: <span id="lastModified"></span></p>   
         </section>        
     </footer>
+
+    <!-- Dialog -->
+    <dialog id="dialog-box">
+        <div class="dialog-content">
+            <span class="close" >&times;</span>
+            <p id="dialog-text"></p>
+        </div>
+    </dialog>
+
 </body>
 </html>

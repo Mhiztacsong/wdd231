@@ -73,7 +73,7 @@ main {
 }
 
 /* Responsive Design */
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
     main {
         padding: 1rem;
     }
@@ -89,5 +89,5 @@ main {
     .content {
         grid-template-columns: 1fr;
     }
-} */
+}
 
