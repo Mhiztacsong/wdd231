@@ -27,11 +27,11 @@
 }
 
 .section img {
-    display: flex;
-    width: 65%;
+    display: block;
+    width: 60%;
     height: auto;
     justify-self:center;
-    margin-bottom: 15px;
+    margin: 0 auto;
     border-radius: 5px;
     transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
