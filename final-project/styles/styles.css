@@ -9,6 +9,8 @@ html, body {
 
 main {
     margin: 0;
+    width:100%;
+    overflow-x: hidden;
 } 
 
 h1, h2, h3 {
@@ -139,7 +141,7 @@ footer p {
         border: none;
         background: none;
         color: white;
-        padding: 0;
+        padding-right: 10px;
         margin-left: auto;
         cursor: pointer;
         width: auto; /* Ensures no unnecessary space */
@@ -161,7 +163,7 @@ footer p {
         color: white;
         width: 100%;
         box-sizing: border-box;
-        padding: 10px 20px;
+        padding: 10px 10px;
     }
 
     .navigation {
@@ -186,7 +188,7 @@ footer p {
 
     .navigation.open {
         max-height: 500px;
-        overflow: auto;
+        overflow: hidden;
     }
 
     .navigation ul li {
