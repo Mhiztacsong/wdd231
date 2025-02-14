@@ -13,7 +13,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 50px;
-    background: #3498db;
+    background: #07578d;
     color: white;
     text-align: left;
 }
@@ -48,7 +48,7 @@ body {
     display: inline-block;
     margin-top: 15px;
     padding: 10px 20px;
-    background: #2ecc71;
+    background: #057e37;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -56,7 +56,7 @@ body {
 }
 
 .cta-button:hover {
-    background: #27ae60;
+    background: #04e261;
 }
 
 /* Quote Section */
@@ -88,23 +88,28 @@ body {
 
 .resource-card h3 a {
     text-decoration: none;
-    color: #2c3e50;
+    color: #07578d;
     transition: transform 0.3s ease, color 0.3s ease;
     display: inline-block;
 }
 
-.resource-card h3 a:hover {
-    transform: scale(1.5);
-    color: #007bff;
-} 
+
+@media (min-width: 641px) {
+    .resource-card h3 a:hover {
+        transform: scale(1.5);
+        color: yellowgreen;
+    } 
+     
+}
+
 
 /* Dialog Box Styling */
 #dialog-box {
-    width: 50%;
+    width: 60%;
     padding: 20px;
     border: none;
     border-radius: 10px;
-    background: white;
+    background: rgb(240, 240, 243);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     text-align: center;
     position: fixed;

@@ -227,7 +227,13 @@ footer p {
         display: grid;
         grid-template-columns: 1fr;
         box-sizing: border-box;
-    }    
+    }  
+    
+    
+    body {
+        font-size: 15px;
+    }
+
 
     footer {
         display: grid;
