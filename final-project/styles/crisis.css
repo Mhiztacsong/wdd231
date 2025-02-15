@@ -2,7 +2,7 @@
 
 /* Hero Section */
 .hero {
-    background: url('../images/hero.webp') no-repeat center center/cover;
+    background: url('../images/crisis-support.webp') no-repeat center center/cover;
     color: white;
     text-align: center;
     padding: 4rem 1rem;
@@ -24,7 +24,7 @@
 
 .cta-button {
     display: inline-block;
-    background: #007bff;
+    background: #033d7a;
     color: white;
     padding: 0.75rem 1.5rem;
     border-radius: 5px;
@@ -32,7 +32,7 @@
 }
 
 .cta-button:hover {
-    background: #0056b3;
+    background: yellowgreen;
 }
 
 /* General Styles */
@@ -103,7 +103,7 @@
 }
 
 .resource a {
-    color: #007bff;
+    color: #033d7a;
     text-decoration: none;
 }
 
