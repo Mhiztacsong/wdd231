@@ -9,10 +9,15 @@ hamButton.addEventListener("click", () => {
     hamButton.classList.toggle("open");
 });
 
-// Fetch and display cards dynamically
-fetch("discover.json")
-    .then(response => response.json())
-    .then(data => {
+// Async function to fetch and display cards dynamically
+async function fetchAndDisplayCards() {
+    try {
+        const response = await fetch("discover.json");
+        if (!response.ok) {
+            throw new Error("Failed to load JSON file");
+        }
+
+        const data = await response.json();
         const gridContainer = document.querySelector(".grid-container");
         gridContainer.innerHTML = "";
 
@@ -22,7 +27,7 @@ fetch("discover.json")
             card.innerHTML = `
                 <h2>${item.title}</h2>
                 <figure>
-                    <img src="${item.image}" alt="${item.alt}">
+                    <img src="${item.image}" alt="${item.alt}" loading="lazy">
                 </figure>
                 <address>${item.address}</address>
                 <p>${item.description}</p>
@@ -30,7 +35,10 @@ fetch("discover.json")
             `;
             gridContainer.appendChild(card);
         });
-    })
-    .catch(error => console.error("Error loading JSON data:", error));
+    } catch (error) {
+        console.error("Error loading JSON data:", error);
+    }
+}
 
-
+// Call the function when the page loads
+document.addEventListener("DOMContentLoaded", fetchAndDisplayCards);
