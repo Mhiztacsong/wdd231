@@ -11,7 +11,7 @@ async function fetchQuote() {
 
         // Display the quote and author on the page
         document.getElementById("mental-health-quote").textContent = `"${randomQuote.q}"`;
-        document.getElementById("quote-author").textContent = - `${randomQuote.a}`;
+        document.getElementById("quote-author").textContent =  `- ${randomQuote.a}`;
     } catch (error) {
         console.error("Error fetching quote:", error);
         document.getElementById("mental-health-quote").textContent = "Stay positive and be strong.";
