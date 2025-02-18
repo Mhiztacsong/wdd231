@@ -12,7 +12,7 @@ hamButton.addEventListener("click", () => {
 // Async function to fetch and display cards dynamically
 async function fetchAndDisplayCards() {
     try {
-        const response = await fetch("discover.json");
+        const response = await fetch("data/discover.json");
         if (!response.ok) {
             throw new Error("Failed to load JSON file");
         }
